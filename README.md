@@ -61,7 +61,7 @@ bemenu-nb-todo [notebook_name] [todos_folder_name] [new_todo_tag_name]
 All actions are done by intuitive selections, except those 3:
 
   - Add todo: in the main list, input any string that starts differently of the strings in the list.
-  - Add task: in the todo content list, input a string starting with `- [ ]` or `- [ ] `.
+  - Add task: in the todo content list, input a string starting with `- [ ]` or `- [x] `.
   - Edit tags: in the todo content list, input a string starting with `#` followed by a character. You can input tags separated by spaces. The existing tags in the todo will be deleted and new ones will be added.
 
 ### Integrations
