@@ -12,9 +12,7 @@ The preview uses my wrapper for bemenu: [bemenu-orange-wrapper](https://github.c
 - [bemenu >= 0.6](https://github.com/Cloudef/bemenu)
 - [Nerd Fonts (Symbols Only)](https://github.com/ryanoasis/nerd-fonts/releases/latest)
 - Bash >= 5
-- Sed
-- Grep
-- Awk
+- sed, grep, awk
 
 ### Optional
 
@@ -23,7 +21,7 @@ The preview uses my wrapper for bemenu: [bemenu-orange-wrapper](https://github.c
 ## Installation
 
 ```bash
-git clone --depth 0 https://github.com/tkapias/bemenu-nb-todo.git bemenu-mpdcli
+git clone --depth 0 https://github.com/tkapias/bemenu-nb-todo.git bemenu-nb-todo
 cd bemenu-nb-todo
 chmod +x bemenu-nb-todo.sh
 ```
