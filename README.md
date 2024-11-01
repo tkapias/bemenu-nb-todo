@@ -8,11 +8,11 @@ The preview uses my wrapper for bemenu: [bemenu-orange-wrapper](https://github.c
 
 ## Dependencies
 
-- [nb](https://github.com/xwmx/nb)
+- [nb >= 7.14.1](https://github.com/xwmx/nb)
 - [bemenu >= 0.6](https://github.com/Cloudef/bemenu)
 - [Nerd Fonts (Symbols Only)](https://github.com/ryanoasis/nerd-fonts/releases/latest)
 - Bash >= 5
-- sed, grep, awk
+- Gnu awk, sed, grep
 
 ### Optional
 
@@ -20,10 +20,31 @@ The preview uses my wrapper for bemenu: [bemenu-orange-wrapper](https://github.c
 
 ## Installation
 
+### Dependencies
+
+- Debian example with [bemenu-orange-wrapper](https://github.com/tkapias/bemenu-orange-wrapper):
+
+1. Follow [bemenu-orange-wrapper instructions](https://github.com/tkapias/bemenu-orange-wrapper?tab=readme-ov-file#installation).
+
+2. Next:
+
+``` bash
+# GNU awk, sed, grep
+sudo apt install gawk sed grep
+
+# nb
+# Install dependecies that you need: https://github.com/xwmx/nb?tab=readme-ov-file#dependencies
+sudo wget https://raw.github.com/xwmx/nb/master/nb -O /usr/local/bin/nb
+sudo chmod +x /usr/local/bin/nb &&
+sudo nb completions install
+```
+
+### bemenu-nb-todo
+
 ```bash
-git clone --depth 0 https://github.com/tkapias/bemenu-nb-todo.git bemenu-nb-todo
+git clone --depth 1 https://github.com/tkapias/bemenu-nb-todo.git bemenu-nb-todo
 cd bemenu-nb-todo
-chmod +x bemenu-nb-todo.sh
+chmod +x bemenu-nb-todo.bash
 ```
 
   - If your nb config uses a non default location, export `NBRC_PATH=` in your session profile, or uncomment it in the script.
@@ -31,7 +52,7 @@ chmod +x bemenu-nb-todo.sh
 - Optional: Symlink to a directory in your user's path:
 
 ```bash
-ln -s $PWD/bemenu-nb-todo.sh $HOME/.local/bin/bemenu-nb-todo
+ln -s $PWD/bemenu-nb-todo.bash $HOME/.local/bin/bemenu-nb-todo
 ```
 
 ## Features
